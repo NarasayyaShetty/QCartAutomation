@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="QKart test" parallel="tests" thread-count="5" >
+  <test thread-count="5" name="Chrome driver test">
+  <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Tests.TestCase"/>
+     
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="FireFox driver Test">
+  <parameter name="browserName" value="fireFox"/>
+    <classes>
+      <class name="Tests.TestCase"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [QKart test]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="FireFox driver Test(failed)">
+    <parameter name="browserName" value="fireFox"/>
+    <classes>
+      <class name="Tests.TestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCase01"/>
+        </methods>
+      </class> <!-- Tests.TestCase -->
+    </classes>
+  </test> <!-- FireFox driver Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Chrome driver test(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="Tests.TestCase">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCase01"/>
+        </methods>
+      </class> <!-- Tests.TestCase -->
+    </classes>
+  </test> <!-- Chrome driver test(failed) -->
+</suite> <!-- Failed suite [QKart test] -->

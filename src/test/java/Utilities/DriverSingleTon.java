@@ -20,7 +20,7 @@ public class DriverSingleTon {
 				ChromeOptions option=new ChromeOptions();
 				option.addArguments("--incognito");
 				option.addArguments("--start-maximized");
-				option.addArguments("--headless");
+			//	option.addArguments("--headless");
 				driver=new ChromeDriver(option);
 				break;
 			case "fireFox":
@@ -28,8 +28,8 @@ public class DriverSingleTon {
 				
 				
 				FirefoxOptions option1=new FirefoxOptions();
-				option1.addArguments("-private");
-				option1.addArguments("--headless");
+			//	option1.addArguments("-private");
+			//	option1.addArguments("--headless");
 				driver=new FirefoxDriver(option1);
 				break;
 			default:
